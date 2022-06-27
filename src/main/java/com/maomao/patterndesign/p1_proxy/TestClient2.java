@@ -5,6 +5,7 @@ import java.lang.reflect.Proxy;
 
 public class TestClient2 {
     public static void main(String[] args) {
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles","true");
         // 1. 创建代理对象
         UserDao userDao = new UserDaoImpl();
         // 2. 创建代理的处理类
